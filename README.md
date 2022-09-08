@@ -57,19 +57,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Genoeg tijd nemen voor het voldoen van taken.
+  - Letters groter maken en zorgen voor duidelijk contrast. 
+
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  - Er wordt veel voorgelezen, geeft me stress. 
+  - Soms wordt er teveel voorgelezen, denk dan aan hele menu's bovenaan de pagina. 
+  - Missende info bij iconen of afbeeldingen. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Oplossingen: 
+  - Keuze wat wel en niet wordt voorgelezen aan de hand van toetsen op het toetsenbord. 
+  - Het keuzemenu niet bovenaan de pagina neerzetten of optie om het hele verhaal te skippen. 
+  - Zorgen dat de alt teksten aanwezig zijn voor een goede screenreader ervaring.
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  We hebben alleen gebruik gemaakt van de TAB-toets en de SHIFT-toets. De touchpad was verboden terrein. 
+  Dit was best een uitdaging aangezien, je niet echt kan scrollen of zoiets, dit gaat allemaal aan de hand 
+  van de TAB-toets.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-
+<>
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
