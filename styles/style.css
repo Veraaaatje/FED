@@ -3,6 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
 }
 
 button, summary {
@@ -11,6 +13,19 @@ button, summary {
 
 
 
+/**************/
+/* TYPOGRAPHY */
+/**************/
+@font-face {
+	font-family: normale tekst;
+	src: url(../fonts/FrutigerNeue.normal.ttf);
+}
+
+@font-face {
+	font-family: dikke tekst;
+	src: url(../fonts/FrutigerNeue.bold.ttf);
+}
+
 
 
 /*********************/
@@ -18,22 +33,79 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#141251;
+	--color-accent-text:#1A60DB;
+	--color-background:#FFFF;
+	--color-icon:#141251;
+
+
 }
-
-
 
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
-
-/* jouw code */
-
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: 'normale tekst';
 }
 
+
+
+/**************/
+/* NAVIGATION */
+/**************/
+nav {
+	margin: 0.6em;
+	margin-bottom: 1em;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+
+
+nav svg {
+	width: 1.5em;
+	fill: var(--color-icon);
+
+}
+
+nav svg:nth-of-type(1) {
+	/* margin-left: 1em;
+	margin-right: 0.5em; */
+}
+
+nav svg:nth-of-type(3) {
+	/* margin-left: 1.5em; */
+}
+
+nav img {
+	width: 5em;
+	height: 1.25em;
+	/* margin: 0em 4em 0em 4em; */
+}
+
+
+
+/***************/
+/* HEADER MAIN */
+/***************/
+main header img {
+	width: 90%;
+}
+
+button {
+	all: unset;
+	display: flex;
+	align-items: center;
+	border-bottom: 1em solid #141251;
+	background-color: #1A60DB;
+	color: var(--color-background);
+}
+
+button svg {
+	fill: var(--color-background);
+	width: 1.5em;
+}
