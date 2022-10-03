@@ -1,0 +1,142 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+    padding: 0;
+    margin: 0;
+}
+  
+button, summary {
+    cursor: pointer;
+}
+  
+  
+  
+/**************/
+/* TYPOGRAPHY */
+/**************/
+@font-face {
+    font-family: 'normal text';
+    src: url('../fonts/frutigerneue.normal-webfont.woff'),
+         url('../fonts/frutigerneue.normal-webfont.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'bold text';
+    src: url('../fonts/frutigerneue.lightBold-webfont.woff'),
+         url('../fonts/frutigerneue.lightBold-webfont.woff2');
+    font-weight: bold;
+    font-style: bold;
+}
+  
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text:#141251;
+    --color-accent-text:#1A60DB;
+    --color-background: #FFF;
+    --color-icon:#141251;
+    --color-border: #E9E8EC;
+    --color-border-bottom: #958FA7;
+    --color-background-section: #F3F7FD;
+}
+  
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-family: 'normal text', sans-serif;
+}
+  
+
+
+/**************/
+/* NAVIGATION */
+/**************/
+nav {
+    margin: 0.6em 0.6em 0.6em 0.6em;
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav button {
+	display: flex;
+	align-items: center;
+	border: none;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-size: 0.9em;
+}
+
+nav button svg {
+	fill: var(--color-text);
+	padding-right: 0.5em;
+	width: 2em;
+}
+
+nav div svg {
+	width: 1.5em;
+	fill: var(--color-icon);
+}
+
+
+nav img {
+	width: 5em;
+	height: 1.3em;
+}
+
+header nav div svg:nth-of-type(1) {
+	margin-right: 1em;
+}
+
+
+
+/***************/
+/* HEADER MAIN */
+/***************/
+main header {
+    display: flex;
+    align-items: center;
+}
+
+main header div {
+    flex-wrap: wrap;
+}
+
+main header h1 {
+	margin-left: 0.5em;
+	font-size: 2.66em;
+	color: #5F699A;
+	font-family: 'bold text', sans-serif;
+}
+
+main header p {
+	display: inline;
+	margin-left: 1.25em;
+}
+
+main header svg {
+    max-width: 7em;
+}
+
+/**************/
+/* OPTION BAR */
+/**************/
+section:nth-of-type(1) {
+    display: flex;
+    padding: 1.25em;
+}
+
+section:nth-of-type(1) p {
+    color: var(--color-accent-text);
+}

@@ -17,13 +17,19 @@ button, summary {
 /* TYPOGRAPHY */
 /**************/
 @font-face {
-	font-family: normale tekst;
-	src: url(../fonts/FrutigerNeue.normal.ttf);
+	font-family: 'normal text';
+    src: url('../fonts/frutigerneue.normal-webfont.woff'),
+         url('../fonts/frutigerneue.normal-webfont.woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: dikke tekst;
-	src: url(../fonts/FrutigerNeue.bold.ttf);
+	font-family: 'bold text';
+    src: url('../fonts/frutigerneue.lightBold-webfont.woff'),
+         url('../fonts/frutigerneue.lightBold-webfont.woff2');
+    font-weight: bold;
+    font-style: bold;
 }
 
 
@@ -35,56 +41,77 @@ button, summary {
 	/* startje */
 	--color-text:#141251;
 	--color-accent-text:#1A60DB;
-	--color-background:#FFFF;
+	--color-background: #FFF;
 	--color-icon:#141251;
-
-
+	--color-border: #E9E8EC;
+	--color-border-bottom: #958FA7;
+	--color-background-section: #F3F7FD;
 }
 
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+/********************/
+/* OVER ALL STYLING */
+/********************/
 body {
   color: var(--color-text);
   background-color: var(--color-background);
-  font-family: 'normale tekst';
+  font-family: 'normal text', sans-serif;
 }
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+main header button:hover {
+	text-decoration: underline;
+	border-bottom: 0.4em solid #141251;
+}
+
 
 
 
 /**************/
 /* NAVIGATION */
 /**************/
-nav {
-	margin: 0.6em;
-	margin-bottom: 1em;
+header {
+	margin: 0.6em 0.6em 0.6em 0.6em;
 	display: flex; 
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
+header button {
+	display: flex;
+	align-items: center;
+	border: none;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-size: 0.9em;
+}
 
-nav svg {
+header button svg {
+	fill: var(--color-text);
+	padding-right: 0.5em;
+	width: 2em;
+}
+
+header div svg {
 	width: 1.5em;
 	fill: var(--color-icon);
-
 }
 
-nav svg:nth-of-type(1) {
-	/* margin-left: 1em;
-	margin-right: 0.5em; */
-}
 
-nav svg:nth-of-type(3) {
-	/* margin-left: 1.5em; */
-}
-
-nav img {
+header img {
 	width: 5em;
-	height: 1.25em;
-	/* margin: 0em 4em 0em 4em; */
+	height: 1.3em;
+}
+
+header:nth-of-type(1) div svg {
+	margin-right: 1em;
 }
 
 
@@ -92,20 +119,273 @@ nav img {
 /***************/
 /* HEADER MAIN */
 /***************/
-main header img {
-	width: 90%;
+
+main header {
+	position: relative;
+	height: 16.7em;
+	background-size: cover;
+	background-repeat: no-repeat;	
+	background-image: url('../images/bigger.parentpage.schiphol.image.jpeg');
 }
 
-button {
-	all: unset;
+/* main header img { */
+	/* width: 100vw; */
+	/* min-height: 16em;
+	height: auto; */
+/* } */
+
+/* main header img { */
+	/* width: 100vw; */
+	/* min-height: 16em;
+	height: auto; */
+	/* content: fill;	 */
+/* } */
+
+main header div h1 {
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	padding-bottom: 0.3em;
+	font-size: 2.66em;
+	color: #FFFF;
+	font-family: 'bold text', sans-serif;
+	text-shadow: 0 0 4px var(--color-text);
+}
+
+main header div p {
+	display: inline;
+	margin-left: 1.25em;
+	background-color: var(--color-background);
+	padding: 0.5em 0.75em 0.5em 0.75em;
+}
+
+main header div button {
+	margin-left: 1.25em;
+	font-size: 1.15em; 
 	display: flex;
 	align-items: center;
-	border-bottom: 1em solid #141251;
+	border: none;
+	border-bottom: 0.2em solid #141251;
 	background-color: #1A60DB;
 	color: var(--color-background);
+	padding: 0.9em 1.5em 0.9em 1.5em;
 }
 
-button svg {
+main header div button svg {
 	fill: var(--color-background);
 	width: 1.5em;
+	padding: 0;
+}
+
+main header div {
+	position: absolute;
+	top: 1.75em;
+}
+
+
+/********/
+/* FORM */
+/********/
+form {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+form div {
+	display: flex;
+	margin-bottom: 1.25em;	
+}
+
+main > section:nth-of-type(1) {
+	padding: 1.25em;
+}
+
+section p:nth-of-type(1) {
+	padding-top: 0.5em;
+	padding-bottom: 1.25em;
+	font-family: 'bold text', sans-serif;
+	font-size: 1.5em;
+}
+
+section:nth-of-type(1) form div:nth-of-type(1) input {
+	width: 1.5em;
+}
+
+form label {
+	padding-left: 0.5em;
+	padding-top: 0.2em;
+}
+
+form label:nth-of-type(1) {
+	padding-right: 2em;
+}
+
+form select {
+	background: #fff url(../images/arrow.down.svg) no-repeat right 1em top 50%;
+	width: 100%;
+	font-size: 1em;
+	padding: 1em 0em 1em 1.25em;
+	color: var(--color-accent-text);
+	border-radius: 0%;
+	border: 0.07em solid var(--color-border);
+	box-shadow: 0em 0.05em 0em var(--color-border-bottom);
+	appearance: none; 
+}
+
+
+form select::after {
+	content: "u"
+}
+
+form div:nth-of-type(3) input {
+	background: #fff url(../images/search.glass.illustrator.svg) no-repeat right 0.5em top 50%;
+	background-size: 2.5em;
+	width: 100%;
+	font-size: 1em;
+	
+	padding: 1em 0em 1em 1.25em;
+	border-radius: 0%;
+	border: 0.07em solid var(--color-border);
+	box-shadow: 0em 0.05em 0em var(--color-border-bottom); 
+}
+
+/*******************************/
+/* SECTION WITH TEXT AND SVG'S */
+/*******************************/
+section:nth-of-type(2) {
+	padding: 1.25em;
+	background-color: var(--color-background-section);
+}
+
+section:nth-of-type(2) section:nth-of-type(1) {
+	padding: 1.25em;
+	background-color: var(--color-background-section);
+}
+
+section:nth-of-type(2) section:nth-of-type(1),
+section:nth-of-type(2) section:nth-of-type(2),
+section:nth-of-type(2) section:nth-of-type(3) {
+	display: flex;
+	background-color: var(--color-background);
+}
+
+section:nth-of-type(2) section:nth-of-type(1) div,
+section:nth-of-type(2) section:nth-of-type(2) div,
+section:nth-of-type(2) section:nth-of-type(3) div {
+	display: flex;
+	flex-direction: column;
+	padding:1.25em;
+}
+
+section:nth-of-type(2) section:nth-of-type(1) p,
+section:nth-of-type(2) section:nth-of-type(2) p,
+section:nth-of-type(2) section:nth-of-type(3) p {
+	font-size: 1em;
+	font-family: 'normal text', sans-serif;
+	margin: 0;
+	padding-top: 0.5em;
+}
+
+section:nth-of-type(2) section:nth-of-type(1) h4,
+section:nth-of-type(2) section:nth-of-type(2) h4,
+section:nth-of-type(2) section:nth-of-type(3) h4 {
+	font-size: 1.3em;
+	font-family: 'bold text', sans-serif;
+	color: var(--color-accent-text);
+}
+
+section:nth-of-type(2) section:nth-of-type(1) svg,
+section:nth-of-type(2) section:nth-of-type(2) svg,
+section:nth-of-type(2) section:nth-of-type(3) svg {
+	width: 20%;
+	fill: var(--color-accent-text);
+}
+
+
+
+/*********************/
+/* INFORMATION LINKS */
+/*********************/
+section:nth-of-type(3) {
+	padding: 1.25em;
+}
+
+section:nth-of-type(3) h2 {
+	padding-top: 1em;
+	padding-bottom: 0.75em;
+	font-family: 'bold text', sans-serif;
+}
+
+section:nth-of-type(3) a {
+	padding-bottom: 0.75em;
+	display: block;
+	color: var(--color-accent-text);
+}
+
+
+section:nth-of-type(3) a:nth-of-type(2) {
+	padding-bottom: 0;
+}
+
+
+
+/*******************************/
+/* INFORMATION CARDS FOR USERS */
+/*******************************/
+section:nth-of-type(4) h2{
+	padding: 1.25em 1.25em 0em 0.9em;
+	font-family: 'bold text', sans-serif;
+}
+
+section:nth-of-type(4) article {
+	margin: 1.25em;
+	box-shadow: 0 0.625em 1.25em 0 var(--color-border);
+}
+
+section:nth-of-type(4) article img {
+	width: 21em;
+}
+
+section:nth-of-type(4) article p {
+	padding: 0 1.25em 1.25em 1.25em;
+	font-family: 'normal text', sans-serif;
+	font-size: 1em;
+	margin: 0;
+}
+
+section:nth-of-type(4) article h3 {
+	padding: 1.25em 1.25em 0.5em 1.25em;
+	font-family: 'bold text', sans-serif;
+}
+
+section:nth-of-type(4) article a {
+	display: block;
+	padding: 0em 1.25em 1.25em 1.25em;
+	color: var(--color-accent-text);
+}
+
+
+
+/*****************/
+/* INVALIDE TEXT */
+/*****************/
+section:nth-of-type(5) {
+	padding: 1.25em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section:nth-of-type(5) svg {
+	width: 3em;
+	fill: var(--color-accent-text);
+	margin-right: 1em;
+}
+
+section:nth-of-type(5) a {
+	color: var(--color-accent-text);
+}
+
+section:nth-of-type(5) div h3 {
+	font-family: 'bold text', sans-serif;
 }
