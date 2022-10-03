@@ -18,16 +18,16 @@ button, summary {
 /**************/
 @font-face {
 	font-family: 'normal text';
-    src: url('../fonts/frutigerneue.normal-webfont.woff'),
-         url('../fonts/frutigerneue.normal-webfont.woff2');
+    src: url('/fonts/frutigerneue.normal-webfont.woff'),
+         url('/fonts/frutigerneue.normal-webfont.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
 	font-family: 'bold text';
-    src: url('../fonts/frutigerneue.lightBold-webfont.woff'),
-         url('../fonts/frutigerneue.lightBold-webfont.woff2');
+    src: url('/fonts/frutigerneue.lightBold-webfont.woff'),
+         url('/fonts/frutigerneue.lightBold-webfont.woff2');
     font-weight: bold;
     font-style: bold;
 }
