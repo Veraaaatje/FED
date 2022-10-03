@@ -26,8 +26,8 @@ button, summary {
 
 @font-face {
 	font-family: 'bold text';
-    src: url('../fonts/frutigerneue.lightBold-webfont.woff'),
-         url('../fonts/frutigerneue.lightBold-webfont.woff2');
+    src: url('../fonts/FrutigerNeue.lightBold.ttf'),
+         url('../fonts/frutigerneue.lightbold-webfont.woff2');
     font-weight: bold;
     font-style: bold;
 }
