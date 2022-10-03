@@ -18,7 +18,7 @@ button, summary {
 /**************/
 @font-face {
 	font-family: 'normal text';
-    src: url('../fonts/frutigerneue.normal-webfont.woff'),
+    src: url('../fonts/FrutigerNeue.normal.ttf'),
          url('../fonts/frutigerneue.normal-webfont.woff2');
     font-weight: normal;
     font-style: normal;
