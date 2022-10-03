@@ -125,7 +125,7 @@ main header {
 	height: 16.7em;
 	background-size: cover;
 	background-repeat: no-repeat;	
-	background-image: url('images/bigger.parentpage.schiphol.image.jpeg');
+	background-image: url('../images/bigger.parentpage.schiphol.image.jpeg');
 }
 
 /* main header img { */
