@@ -18,16 +18,16 @@ button, summary {
 /**************/
 @font-face {
     font-family: 'normal text';
-    src: url('fonts/frutigerneue.normal-webfont.woff'),
-         url('fonts/frutigerneue.normal-webfont.woff2');
+    src: url('../fonts/frutigerneue.normal-webfont.woff'),
+         url('../fonts/frutigerneue.normal-webfont.woff2');
     font-weight: normal;
     font-style: normal;
 }
   
 @font-face {
     font-family: 'bold text';
-    src: url('fonts/frutigerneue.lightBold-webfont.woff'),
-         url('fonts/frutigerneue.lightBold-webfont.woff2');
+    src: url('../fonts/frutigerneue.lightBold-webfont.woff'),
+         url('../fonts/frutigerneue.lightBold-webfont.woff2');
     font-weight: bold;
     font-style: bold;
 }
@@ -111,22 +111,23 @@ main header {
 
 main header div {
     flex-wrap: wrap;
+    padding-left: 1.25em;
+    padding-top: 1.75em;
+    padding-bottom: 0.75em;
 }
 
 main header h1 {
-	margin-left: 0.5em;
 	font-size: 2.66em;
 	color: #5F699A;
 	font-family: 'bold text', sans-serif;
 }
 
 main header p {
-	display: inline;
-	margin-left: 1.25em;
+    margin-bottom: 1em;
 }
 
 main header svg {
-    max-width: 7em;
+    max-width: 9em;
 }
 
 /**************/
