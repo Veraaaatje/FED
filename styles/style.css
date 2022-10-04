@@ -80,9 +80,23 @@ main header button:hover {
 /**************/
 /* NAVIGATION */
 /**************/
+nav {
+	padding:1em;
+	
+	display:grid;
+	align-content:start;
+	gap:1em;
+	
+	background-image:var(--menu-gradient);
+}
+
+
+/**********/
+/* HEADER */
+/**********/
 header {
 	margin: 0.6em 0.6em 0.6em 0.6em;
-	display: flex; 
+	/* display: flex;  */
 	align-items: center;
 	justify-content: space-between;
 }

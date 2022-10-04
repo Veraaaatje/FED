@@ -1,11 +1,11 @@
 // JavaScript Document
-const menuButton = document.querySelector("nav > button");
+const openButton = document.querySelector("header button");
 
-menuButton.addEventListener("click", openMenu)
+openButton.addEventListener("click", openMenu);
 
-function openMenu(){
-    const deNav = document.querySelector("nav")
+function openMenu() {
+    const deNav = document.querySelector("nav");
 
-    deNav.classList.toggle("toonMenu");
+    deNav.classList.add("toonMenu");
 
 }
