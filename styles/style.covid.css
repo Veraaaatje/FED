@@ -38,7 +38,6 @@ button, summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-    /* startje */
     --color-text:#141251;
     --color-accent-text:#1A60DB;
     --color-background: #FFF;
@@ -120,8 +119,15 @@ main header div {
 
 main header h1 {
 	font-size: 2.66em;
-	color: #5F699A;
 	font-family: 'bold text', sans-serif;
+    /* Dit is het gradientBlock */
+    background-image: linear-gradient(90deg, #546294 0%, #817eaa 50%, #b67745 100%);
+   
+    /* Dit zorgt ervoor dat het gradientBlock op de text gaat */
+    -webkit-background-clip: text;
+    
+    /* Dit zorgt ervoor dat het gradientBlock zichtbaar is binnen de text */
+    -webkit-text-fill-color: rgba(0,0,0,0);
 }
 
 main header p {
@@ -177,8 +183,7 @@ section:nth-of-type(5) {
 
 section:nth-of-type(2),
 section:nth-of-type(3),
-section:nth-of-type(4),
-section:nth-of-type(5) p {
+section:nth-of-type(4) p {
     font-family: 'normal text', sans-serif;
     line-height: 1.5em;
     padding: 0 1.25 0 1.25em; 
@@ -196,6 +201,13 @@ section h3 {
 
 li {
     margin: 0 0 0 1.25em;
+}
+
+/* Aparte styling P vanwege extra padding bij Ol */
+section:nth-of-type(5) p {
+    font-family: 'normal text', sans-serif;
+    line-height: 1.5em;
+    padding: 0 1.25 1em 1.25em; 
 }
 
 
