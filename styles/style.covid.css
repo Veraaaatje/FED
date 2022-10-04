@@ -38,16 +38,36 @@ button, summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-    --color-text:#141251;
-    --color-accent-text:#1A60DB;
-    --color-background: #FFF;
-    --color-icon:#141251;
-    --color-border: #E9E8EC;
-    --color-border-bottom: #958FA7;
-    --color-background-section: #F3F7FD;
-}
-  
 
+	--color-text:#141251;
+	--color-accent-text:#1A60DB;
+	
+	--color-icon:#141251;
+	
+	--color-border: #E9E8EC;
+	--color-border-bottom: #958FA7;
+	--color-boxshadow: #958FA7;
+	
+	--color-background-section: #F3F7FD;
+	--color-background: #FFF;
+}
+
+@media (prefers-color-scheme:dark) { 
+:root {
+	--color-text: #737373;
+	--color-accent-text:#063482;
+	
+	--color-icon:#white;
+	
+	--color-border: #737373;
+	--color-border-bottom: #323232;
+	--color-boxshadow: #323232;
+	
+	--color-background-section: rgb(45, 45, 45);
+	--color-background: rgb(30, 30, 30);
+} }
+
+  
 
 /****************/
 /* JOUW STYLING */
@@ -64,40 +84,57 @@ body {
 /* NAVIGATION */
 /**************/
 nav {
-    margin: 0.6em 0.6em 0.6em 0.6em;
-	display: flex; 
-	align-items: center;
-	justify-content: space-between;
-}
-
-nav button {
-	display: flex;
-	align-items: center;
-	border: none;
 	background-color: var(--color-background);
-	color: var(--color-text);
-	font-size: 0.9em;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	transform:translatex(-100%);
+	transition: transform 0.3s;
 }
 
-nav button svg {
-	fill: var(--color-text);
-	padding-right: 0.5em;
-	width: 2em;
+nav.toonMenu {
+	transform:translatex(0);
+}
+
+nav ul {
+	list-style: none;
+	
+	padding: 0em 0.75em 2.25em 0.75em;
 }
 
 nav div svg {
 	width: 1.5em;
+	
 	fill: var(--color-icon);
+	
+	margin: 0;
 }
 
-
-nav img {
+nav div img {
+	margin-right: 7em;
 	width: 5em;
 	height: 1.3em;
 }
 
-header nav div svg:nth-of-type(1) {
-	margin-right: 1em;
+nav div {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	
+	padding: 1em;
+}
+
+nav li a {
+	display: block;
+	padding: 1em 0.5em 1em 0.5em;
+	
+	text-decoration: none;
+	font-size: 0.9em;
+	color: var(--color-text);
 }
 
 

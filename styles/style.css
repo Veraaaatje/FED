@@ -37,7 +37,7 @@ button, summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+
 	--color-text:#141251;
 	--color-accent-text:#1A60DB;
 	
@@ -45,12 +45,26 @@ button, summary {
 	
 	--color-border: #E9E8EC;
 	--color-border-bottom: #958FA7;
+	--color-boxshadow: #958FA7;
 	
 	--color-background-section: #F3F7FD;
 	--color-background: #FFF;
 }
 
-
+@media (prefers-color-scheme:dark) { 
+:root {
+	--color-text: #737373;
+	--color-accent-text:#063482;
+	
+	--color-icon:#white;
+	
+	--color-border: #737373;
+	--color-border-bottom: #323232;
+	--color-boxshadow: #323232;
+	
+	--color-background-section: rgb(45, 45, 45);
+	--color-background: rgb(30, 30, 30);
+} }
 
 /********************/
 /* OVER ALL STYLING */
@@ -87,7 +101,7 @@ main header button:hover {
 /* NAVIGATION */
 /**************/
 nav {
-	background-color: antiquewhite;
+	background-color: var(--color-background);
 
 	position: fixed;
 	top: 0;
@@ -96,6 +110,11 @@ nav {
 	bottom: 0;
 
 	transform:translatex(-100%);
+	transition: transform 0.3s;
+}
+
+nav.toonMenu {
+	transform:translatex(0);
 }
 
 nav ul {
@@ -159,12 +178,12 @@ header button {
 	border: none;
 	background-color: var(--color-background);
 	
-	color: var(--color-text);
+	color: var(--color-icon);
 	font-size: 0.9em;
 }
 
 header button svg {
-	fill: var(--color-text);
+	fill: var(--color-icon);
 	
 	padding-right: 0.5em;
 	
@@ -225,7 +244,7 @@ main header div h1 {
 	padding-bottom: 0.3em;
 	
 	font-size: 2.66em;
-	color: #FFFF;
+	color: var(--color-background);
 	font-family: 'bold text', sans-serif;
 	text-shadow: 0 0 4px var(--color-text);
 }
@@ -310,6 +329,7 @@ form select {
 	background: #fff url(../images/arrow.down.svg) no-repeat right 1em top 50%;
 	width: 100%;
 	padding: 1em 0em 1em 1.25em;
+	background-color: var(--color-background);
 
 	font-size: 1em;
 	color: var(--color-accent-text);
@@ -329,13 +349,14 @@ form div:nth-of-type(3) input {
 	background: #fff url(../images/search.glass.illustrator.svg) no-repeat right 0.5em top 50%;
 	background-size: 2.5em;
 	width: 100%;
-	
+	background-color: var(--color-background);
+
 	font-size: 1em;
 	
 	padding: 1em 0em 1em 1.25em;
 	border-radius: 0%;
 	border: 0.07em solid var(--color-border);
-	box-shadow: 0em 0.05em 0em var(--color-border-bottom); 
+	box-shadow: 0em 0.05em 0em var(--color-boxshadow); 
 }
 
 /*******************************/

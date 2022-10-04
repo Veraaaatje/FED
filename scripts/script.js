@@ -10,15 +10,20 @@ function openMenu() {
 
 }
 
+const sluitButton = document.querySelector("nav div svg");
 
+sluitButton.addEventListener("click", sluitMenu);
 
+function sluitMenu() {
+    var deNav = document.querySelector("nav");
+    deNav.classList.remove("toonMenu");
+}
 
-// const topping_1 = document.querySelector('.topping_1');
+window.addEventListener("keydown", handleKeydown);
 
-// deNav.addEventListener('click', function () {
-//     if (topping_1.classList.contains("hidden")) {
-//         topping_1.classList.remove("hidden");
-//     } else {
-//         topping_1.classList.add("hidden");
-//     }
-// })
+function handleKeydown(event) {
+  if (event.key == "Escape") {
+    var deNav = document.querySelector("nav");
+    deNav.classList.remove("toonMenu");
+  }
+}
