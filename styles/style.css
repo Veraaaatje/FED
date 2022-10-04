@@ -62,13 +62,18 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+	color: var(--color-accent-text);
+}
+
+section:nth-of-type(2) section a:hover {
+	text-decoration: underline;
+	color: var(--color-accent-text);
 }
 
 main header button:hover {
 	text-decoration: underline;
 	border-bottom: 0.4em solid #141251;
 }
-
 
 
 
