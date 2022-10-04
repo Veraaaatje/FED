@@ -9,3 +9,16 @@ function openMenu() {
     deNav.classList.add("toonMenu");
 
 }
+
+
+
+
+// const topping_1 = document.querySelector('.topping_1');
+
+// deNav.addEventListener('click', function () {
+//     if (topping_1.classList.contains("hidden")) {
+//         topping_1.classList.remove("hidden");
+//     } else {
+//         topping_1.classList.add("hidden");
+//     }
+// })
