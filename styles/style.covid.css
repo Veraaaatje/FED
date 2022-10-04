@@ -172,6 +172,7 @@ section:nth-of-type(2) {
 }
 
 
+
 /***************/
 /* CORONA TEXT */
 /***************/
@@ -181,33 +182,31 @@ section:nth-of-type(5) {
     padding: 1.25em;
 }
 
-section:nth-of-type(2),
 section:nth-of-type(3),
 section:nth-of-type(4) p {
     font-family: 'normal text', sans-serif;
     line-height: 1.5em;
-    padding: 0 1.25 0 1.25em; 
 }
 
-section h2 {
-    font-family: 'bold text', sans-serif;
-    padding-bottom: 0.5em;
-}
-
-section h3 {
+section:nth-of-type(3),
+section:nth-of-type(4),
+section:nth-of-type(5) h2 {
     font-family: 'bold text', sans-serif;
     padding-bottom: 0.5em;
 }
 
 li {
+    padding-left: 0.75em;
     margin: 0 0 0 1.25em;
+    line-height: 1.5em;
 }
 
 /* Aparte styling P vanwege extra padding bij Ol */
 section:nth-of-type(5) p {
+    display: block;
     font-family: 'normal text', sans-serif;
     line-height: 1.5em;
-    padding: 0 1.25 1em 1.25em; 
+    margin: 0 0 1em 0;
 }
 
 
@@ -215,3 +214,26 @@ section:nth-of-type(5) p {
 /********************************/
 /* SECTION AANKOMENDE REIZIGERS */
 /********************************/
+article {
+    padding: 0 0em 1em 0;
+    line-height: 1.5em;
+}
+
+article h2 {
+    padding: 0 0 0.75em 0;
+    font-family: 'bold text', sans-serif;
+}
+
+article:nth-of-type(3) {
+    padding-bottom: 0;
+}
+
+main > section h3 {
+    font-family: 'bold text', sans-serif;
+    padding-bottom: 0.5em;
+}
+
+section:nth-of-type(6) {
+    padding: 1.25em;
+    background-color: var(--color-background-section);
+}
