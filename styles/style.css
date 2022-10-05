@@ -227,22 +227,12 @@ main header {
 	background-repeat: no-repeat;	
 	background-image: url('../images/bigger.parentpage.schiphol.image.jpeg');
 	
-	z-index: -1;
 	margin: 0;
 }
 
-/* main header img { */
-	/* width: 100vw; */
-	/* min-height: 16em;
-	height: auto; */
-/* } */
-
-/* main header img { */
-	/* width: 100vw; */
-	/* min-height: 16em;
-	height: auto; */
-	/* content: fill;	 */
-/* } */
+main header.verbergMainHeader {
+	z-index: -1;
+}
 
 main header div h1 {
 	padding-top: 0.5em;

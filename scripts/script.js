@@ -1,5 +1,6 @@
 // Openen van menu
 const openButton = document.querySelector("header button");
+const mainHeader = document.querySelector("main header")
 
 openButton.addEventListener("click", openMenu);
 
@@ -7,7 +8,7 @@ function openMenu() {
     const deNav = document.querySelector("nav");
 
     deNav.classList.add("toonMenu");
-
+    mainHeader.classList.add("verbergMainHeader")
 }
 
 // Sluiten van menu
@@ -18,6 +19,7 @@ sluitButton.addEventListener("click", sluitMenu);
 function sluitMenu() {
     var deNav = document.querySelector("nav");
     deNav.classList.remove("toonMenu");
+    mainHeader.classList.remove("verbergMainHeader")
 }
 
 window.addEventListener("keydown", handleKeydown);
