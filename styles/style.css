@@ -102,6 +102,11 @@ main header button:hover {
 	border-bottom: 0.4em solid #141251;
 }
 
+svg:hover{
+    width: 2em;
+    color: var(--color-state-text)
+}
+
 
 
 /**************/

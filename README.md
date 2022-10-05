@@ -148,23 +148,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  html eerste pagina compleet, begonnen aan CSS, loop vast met form en positionen van achtergrond afbeelding
+  html eerste pagina compleet, begonnen aan CSS, loop vast met form en positionen van achtergrond afbeelding.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  student 1: Er zijn voor mij niet echt dingen die ik gecheckt wil hebben, ben al lekker bezig.      
-  student 2: Ik wil graag kijken naar of mijn html goed semantisch is en mijn CSS er al goed uitziet + tips daarbij. 
+  student 1: Er zijn voor mij niet echt dingen die ik gecheckt wil hebben, ben al lekker bezig.(komt niet naar feedback moment).      
+  student 2: Ik heb hulp nodig met mijn CSS een aantal dingen die ik wil doen lukken niet. 
   
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Hulp gehad van studenten assistenten
+  - Ervoor gezorgd dat mijn form correct werkt
+  - Heeft ervoor gezorgd dat mijn image nu staat als background image waardoor het werkt zoals ik dat wil.
+
 
 </details>
 
@@ -179,29 +179,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Alt teksten bij de afbeeldingen toevoegen.
+  - Artikelen groeperen(was niet per se nodig)
+  - Knoppen werkbaar maken(niet per se nodig)
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Hij zegt bij de linkjes af en toe bezocht link, kijken of ik dat kan aanpassen.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  TABben gingen eigenlijk best goed misschien nog iets leuks doen met de Focus state.   
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  / helaas heb ik dit deze ronde niet getest.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Goed denken aan contrast op website, misschien extra functie toevoegen daarvoor.
 
 </details>
 
@@ -220,21 +212,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+ 
+  student 1: Er zijn voor mij niet echt dingen die ik gecheckt wil hebben, ben al lekker bezig.(komt niet naar feedback moment).      
+  student 2: Ik loop vast met mijn Filter en Sorteren, uitbreiden naar zijkant/ radio buttons(wil maar 1 kunnen selecteren).
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Typografie leuk stylen
+  - Misschien een blockquote toevoegen voor de extraatjes
+  - Meer nog spelen met hover state en andere states.
 
 </details>
 
@@ -248,19 +235,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="homepagina.final" width="375px" alt="uitkomst opdracht 1">
+  <img src="covidpagina.final" width="375px" alt="uitkomst opdracht 2">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Korte omschrijving:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
-
+  Ik heb veel geleerd van hoe je CSS selectoren beter kan aanroepen/gebruiken. ipv allemaal classes te gebruiken.
+  Ook heb ik geleerd hoe je in de opzicht beter met js kan samenwerken(zonder allemaal classes).
+  En heb nieuwe CSS properties geleerd, waar ik nog veel aan ga hebben in de toekomst. 
+  
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Korte omschrijving:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik had geen tijd meer om de focus state mooi uit te werken, aan toegankelijk heb ik mijn best gedaan maar heb ik ook niet volledig kunnen uitwerken en daar baal ik wel heel erg van.
+
 </details>
 
 
@@ -272,10 +261,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. voor afbeeldingen en svg's: https://www.schiphol.nl/nl/
+  2. voor muziek van opstijgend vliegtuig: https://www.youtube.com/watch?v=h3czy-WgeFw
+  3. voor png van vliegtuig: https://www.pngegg.com/nl/png-bbglk
 
 </details>
