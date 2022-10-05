@@ -375,9 +375,11 @@ section:nth-of-type(6) {
 /* ANIMATIE */
 /************/
 main > img {
-    width: 5em;
+    position: absolute;
+    width: 7em;
     z-index: 1;
     animation: vliegtuigImage 4s infinite;
+    transform: translate(-100%)
 }
 
 .hidden{
