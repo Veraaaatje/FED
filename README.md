@@ -235,8 +235,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="homepagina.final" width="375px" alt="uitkomst opdracht 1">
-  <img src="covidpagina.final" width="375px" alt="uitkomst opdracht 2">
+  <img src="readme-images/homepagina.final" width="375px" alt="uitkomst opdracht 1">
+  <img src="readme-images/covidpagina.final" width="375px" alt="uitkomst opdracht 2">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving:
