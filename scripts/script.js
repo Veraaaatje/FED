@@ -1,4 +1,4 @@
-// JavaScript Document
+// Openen van menu
 const openButton = document.querySelector("header button");
 
 openButton.addEventListener("click", openMenu);
@@ -10,6 +10,7 @@ function openMenu() {
 
 }
 
+// Sluiten van menu
 const sluitButton = document.querySelector("nav div svg");
 
 sluitButton.addEventListener("click", sluitMenu);
@@ -30,7 +31,6 @@ function handleKeydown(event) {
 
 
 // animatie
-
 const vliegtuigButton = document.querySelector("section:nth-of-type(1) p");
 const vliegtuigImg = document.querySelector("main > img");
 const audio = document.querySelector("main > audio");

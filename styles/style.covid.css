@@ -41,6 +41,7 @@ button, summary {
 
 	--color-text:#141251;
 	--color-accent-text:#1A60DB;
+    --color-state-text: #6F579C;
 	
 	--color-icon:#141251;
 	
@@ -56,6 +57,7 @@ button, summary {
 :root {
     --color-text: #cacaca;
     --color-accent-text:#4f7dcd;
+    --color-state-text: #a588da;
         
     --color-icon: #cacaca;
         
@@ -92,7 +94,10 @@ a:focus{
 	color: var(--color-state-text);
 }
 
-
+svg:hover{
+    width: 2em;
+    color: var(--color-state-text)
+}
 
 /**************/
 /* NAVIGATION */
