@@ -467,6 +467,10 @@ section:nth-of-type(4) article {
 	box-shadow: 0 0.625em 1.25em 0 var(--color-border);
 }
 
+section:nth-of-type(4) article:hover {
+	box-shadow: 0.3em 0.325em 0.2em 0 var(--color-accent-text);
+}
+
 section:nth-of-type(4) article img {
 	width: 21em;
 }

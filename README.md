@@ -77,19 +77,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Dit was best een uitdaging aangezien, je niet echt kan scrollen of zoiets, dit gaat allemaal aan de hand 
   van de TAB-toets.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
-<>
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Met de elastiekjes op mijn vinger drukte ik soms nog weleens op de verkeerde knopjes of twee tegelijk, 
+  dan is gebruik maken van de TAB-toets erg handig, het voorkomt verwarringen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
+  
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Sommige brilletjes waren gewoon heel erg irritant, omdat je dan maar weinig kon zien of een heel klein beetje of wazig, 
+  het helpt dan om een hoog contrast te hebben. Of de lettergrootte te kunnen aanpassen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
@@ -101,13 +98,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.schets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="" width="375px" alt="breakdown van nog een dynamisch deel">
+  Ik heb geprobeerd een breakdown schets te maken van de gehele pagina waarbij ook het dynamische deel wordt behandeld, zie foto.
 
 </details>
 
@@ -121,17 +119,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik heb nog niet enorm veel gedaaan aan mijn website, ik heb moeite met opgang komen, waaardoor ik nog maar een deel heb van mijn html en nog geen styling.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  student 1: Er zijn voor mij niet echt dingen die ik gecheckt wil hebben, ben al lekker bezig.      
+  student 2: Ik wil graag kijken naar of mijn html goed semantisch is en mijn CSS er al goed uitziet + tips daarbij.       
+     
+  
 
 
   ### Verslag van meeting
