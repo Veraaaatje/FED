@@ -54,20 +54,20 @@ button, summary {
 
 @media (prefers-color-scheme:dark) { 
 :root {
-	--color-text: #737373;
-	--color-accent-text:#063482;
-	
-	--color-icon:#white;
-	
-	--color-border: #737373;
-	--color-border-bottom: #323232;
-	--color-boxshadow: #323232;
-	
-	--color-background-section: rgb(45, 45, 45);
-	--color-background: rgb(30, 30, 30);
+    --color-text: #cacaca;
+    --color-accent-text:#4f7dcd;
+        
+    --color-icon: #cacaca;
+        
+    --color-border: #cacaca;
+    --color-border-bottom: #737373;
+    --color-boxshadow: #737373;
+        
+    --color-background-section: rgb(45, 45, 45);
+    --color-background: rgb(30, 30, 30);
 } }
-
   
+
 
 /****************/
 /* JOUW STYLING */
@@ -139,12 +139,69 @@ nav li a {
 
 
 
+/**********/
+/* HEADER */
+/**********/
+ body > header {
+	z-index: 5;
+    padding: 0.6em 0.6em 0.6em 0.6em;
+	background-color: var(--color-background);
+	
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	
+	top: 0;
+	position: sticky;
+}
+
+header button {
+	display: flex;
+	align-items: center;
+	
+	border: none;
+	background-color: var(--color-background);
+	
+	color: var(--color-icon);
+	font-size: 0.9em;
+}
+
+header button svg {
+	fill: var(--color-icon);
+	
+	padding-right: 0.5em;
+	
+	width: 2em;
+}
+
+header div svg {
+	width: 1.5em;
+	
+	fill: var(--color-icon);
+}
+
+header img {
+	width: 5em;
+	height: 1.3em;
+}
+
+/* Zorgt voor extra margins waar niet moet */
+/* header:nth-of-type(1) div svg {
+	margin-right: 1em;
+} */
+
+
+
 /***************/
 /* MAIN HEADER */
 /***************/
 main header {
     display: flex;
     align-items: center;
+
+
+    z-index: ;
+	padding: 0;
 }
 
 main header div {

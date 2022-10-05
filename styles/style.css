@@ -40,6 +40,8 @@ button, summary {
 
 	--color-text:#141251;
 	--color-accent-text:#1A60DB;
+	--color-state-text: #6F579C;
+
 	
 	--color-icon:#141251;
 	
@@ -53,14 +55,15 @@ button, summary {
 
 @media (prefers-color-scheme:dark) { 
 :root {
-	--color-text: #737373;
-	--color-accent-text:#063482;
+	--color-text: #cacaca;
+	--color-accent-text:#4f7dcd;
+	--color-state-text: #a588da;
 	
-	--color-icon:#white;
+	--color-icon: #cacaca;
 	
-	--color-border: #737373;
-	--color-border-bottom: #323232;
-	--color-boxshadow: #323232;
+	--color-border: #cacaca;
+	--color-border-bottom: #737373;
+	--color-boxshadow: #737373;
 	
 	--color-background-section: rgb(45, 45, 45);
 	--color-background: rgb(30, 30, 30);
@@ -82,6 +85,10 @@ a {
 a:hover {
 	text-decoration: underline;
 	color: var(--color-accent-text);
+}
+
+a:focus{
+	color: var(--color-state-text);
 }
 
 section:nth-of-type(2) section a:hover {
@@ -153,7 +160,6 @@ nav li a {
 	font-size: 0.9em;
 	color: var(--color-text);
 }
-
 
 
 /**********/
