@@ -72,12 +72,26 @@ button, summary {
 /****************/
 /* JOUW STYLING */
 /****************/
+
 body {
-    color: var(--color-text);
-    background-color: var(--color-background);
-    font-family: 'normal text', sans-serif;
+	color: var(--color-text);
+	font-family: 'normal text', sans-serif;
+
+	background-color: var(--color-background);
 }
-  
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: var(--color-accent-text);
+}
+
+a:focus{
+	color: var(--color-state-text);
+}
+
 
 
 /**************/
@@ -200,7 +214,7 @@ main header {
     align-items: center;
 
 
-    z-index: ;
+    
 	padding: 0;
 }
 
@@ -235,6 +249,11 @@ main header svg {
 /**************/
 /* OPTION BAR */
 /**************/
+section:nth-of-type(1) p:hover {
+    background-color: var(--color-accent-text);
+    color: var(--color-background);
+}
+
 main > section:nth-of-type(1) {
     display: flex;
     padding: 1.25em;
@@ -303,7 +322,7 @@ section:nth-of-type(5) h2 {
 }
 /* Padding bottom fixed this way ^ */
 
-li {
+section:nth-of-type(5) li {
     padding-left: 0.75em;
     margin: 0 0 0 1.25em;
     line-height: 1.5em;
@@ -345,3 +364,39 @@ section:nth-of-type(6) {
     padding: 1.25em;
     background-color: var(--color-background-section);
 }
+
+
+/************/
+/* ANIMATIE */
+/************/
+main > img {
+    width: 5em;
+    z-index: 1;
+    animation: vliegtuigImage 4s infinite;
+}
+
+.hidden{
+   visibility: hidden;
+}
+
+@keyframes vliegtuigImage{
+    0%{
+        transform:translatex(-50%);}
+    20%{
+        transform:translatex(20%);
+    }
+    40%{
+        transform:translatex(80%);
+    }
+    60%{
+        transform:translatex(180%);
+    }
+    80%{
+        transform:translatex(300%);
+    }
+     100%{
+        transform:translatex(400%);
+    }
+}
+
+
